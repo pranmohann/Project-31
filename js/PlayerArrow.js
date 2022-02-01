@@ -9,7 +9,7 @@ class PlayerArrow {
     this.width = width;
     this.height = height;
     this.body = Bodies.rectangle(x, y, this.width, this.height, options);
-    this.image = loadImage("./assets/arrow.png");
+    this.image = loadImage("assets/arrow.png");
     //write a code for defining an array named trajectory
    this.trajectory=[]
     
@@ -41,7 +41,7 @@ class PlayerArrow {
 
       /****write a correct code to add for loop and to display small dots at all the positions stored in trajectory array *******/
      for(var i=0; i<this.trajectory.length; i++){
-       image(this.image,this.trajectory[i][0],this.trajectory[i][i],5,5)
+       image(this.image,this.trajectory[i][0],this.trajectory[i][1],5,5)
      }
   
   }
